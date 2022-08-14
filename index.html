@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hashir's web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- css links here -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" >
+
+    
+    
+  </head>
+  <body>
+    
+    <!-- nav starts here---------------------------------------------- -->
+    <header>
+      <h2><span class="name">Hashir's</span> <span class="portofolio">Portofolio</span></h2>
+      <nav id="nav-bar">
+        <ul>
+          <li><a href="" >Home</a></li>
+          <li><a href="#qualification">Qualifications</a></li>
+          <li><a href="#skillsec">Skills</a></li>
+          <li><a href="#aboutsec">About Me</a></li>
+          <li><a href="mailto:ahmedhashir910@gmail.com">Contact</a></li>
+          <div id="close-btn"><i class="bi bi-x"></i></div>
+        </ul>
+      </nav>
+      <div id="hamburger"><i class="bi bi-list"></i></div>
+    </header>
+    <!-- section------------- -->
+
+    <div class="container-main">
+      
+      <div class="sub-container1">
+        
+        <p class="first-p">
+          Hi I am <span class="hashir">Hashir</span> , <br />
+          welcome to my Portfolio.</span>
+        </p>
+        <p class="second-p">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+          natus, quod dicta inventore sunt officia esse possimus repudiandae
+          aperiam eius nemo magni vitae praesentium. Non eos doloribus, est ex
+          velit, distinctio vitae animi, nesciunt reprehenderit cupiditate enim
+          perspiciatis neque praesentium.
+        </p>
+        <a href="mailto:ahmedhashir910@gmail.com"  target="_blank" class="cv">Contact me<i class="bi bi-envelope"></i></a>
+        <div class="social-links">
+          <a href="https://www.facebook.com/hashir.ahmed.5492216/" class="links" target="_blank" ><i class="bi bi-facebook"></i></a>
+          <a href="" class="links" target="_blank"><i class="bi bi-instagram"></i></a>
+          <a href="" class="links" target="_blank"><i class="bi bi-linkedin"></i></a>
+          <a href="" class="links" target="_blank"><i class="bi bi-pinterest"></i></a>
+        </div>
+        
+      </div>
+      <div class="sub-container-2" id="img">
+      <img src="img/hashir ahmed.png" alt="my image" class="myimg" >
+    </div>
+    </div>
+
+    <!-- section-2 qualification starts here---------------------------------------------- -->
+
+
+
+
+      <div id="qualification" class="main-qualification">
+        <h1 class="qualification-head">Qualification<i class="bi bi-mortarboard-fill"></i></h1>
+        <div class="qualification">
+          <div class="qualification-img">
+            <i class="bi bi-mortarboard"></i>
+          </div>
+          <p class="qualification-intro">
+            I am the student of class XII in Government Dehli College.Passed my matriculation from Helicon Secondary School.
+            Further I will go for BSCS . Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui non necessitatibus illum nesciunt nihil dolor, 
+            rem adipisci ex aut fugit.
+          </p>
+        </div>
+      </div>
+
+
+
+     <!-- section-3 skills starts here---------------------------------------------- -->
+     
+      <div  id="skillsec" class="skills-main">
+        <h1 class="skills-head">Skills<i class="bi bi-gear-fill"></i></h1>
+        <div class="skills">
+          <div class="skills-img">
+            <i class="bi bi-gear"></i>
+          </div>
+          <p class="skills-intro">
+            I am a Front-end developer creating portfolio landing pages
+            and different types of websites for people. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ea dolore debitis praesentium repudiandae consequatur 
+            velit minus, architecto similique necessitatibus.
+          </p>
+        </div>
+      </div>
+
+
+      <!-- section 4 about me----------------- -->
+
+
+
+
+      <div class="main-about " id="aboutsec">
+        
+      <h1 class="about-head">About Me <i class="bi bi-file-earmark-person-fill"></i></h1>
+      <div class="about">
+        <div class="img-about">
+          <i class="bi bi-file-person"></i>
+        </div>
+        <p class="about-intro">I am the resident of Karachi in Pakistan and the student of class 12th at Government Dehli College. I am also a front-end developer Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam repellat maiores c
+          onsectetur blanditiis at, voluptatibus ipsum aut quia officia ab ullam id deserunt
+           modi consequuntur in odit eius sunt voluptatum!</p>
+      </div>
+    
+    </div>
+
+
+
+    <!-- contact  menu section?----------------- -->
+    
+
+
+      <div class="contact-menu">
+        <form action="backend.php" method="get">
+          <fieldset class="main-box">
+            <legend class="contact">Contact - Menu <i class="bi bi-envelope-paper-fill"></i></legend>
+            <fieldset class="name">
+              <legend id="username"><label for="Name">Name</label></legend>
+              <input type="text" name="username" id="Name" maxlength="20" required="required">
+            </fieldset>
+            <fieldset class="message">
+              <legend class="para"><label for="Message">Message</label></legend>
+              <textarea name="message" id="Message" cols="30" rows="10"></textarea>
+            </fieldset>
+            <input type="submit" value="submit" id="submit">
+          </fieldset>
+        </form>
+      </div>
+
+      <footer>
+        copyright &copy; 2022 - 2023
+      </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+      let trans=document.getElementsByTagName('ul')
+      let head=document.getElementsByTagName('header');
+      let hamburger=document.getElementById('hamburger');
+      let nav=document.getElementById('nav-bar')
+      let click= hamburger.addEventListener("click",function (event){
+        nav.style.display='flex';
+        hamburger.style.display='none';
+       
+        
+
+      
+      });
+      
+      let closeBtn=document.getElementById('close-btn');
+      let close= closeBtn.addEventListener('click',function(none){
+        nav.style.display='none';
+        hamburger.style.display='flex'
+      })
+
+
+      console.log(head)
+    </script>
+  </body>
+</html>
